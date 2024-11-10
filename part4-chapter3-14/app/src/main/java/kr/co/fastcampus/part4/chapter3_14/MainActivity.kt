@@ -6,7 +6,6 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.OutlinedButton
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -55,12 +54,14 @@ fun Greeting() {
 //        TextField(value = name, label = {
 //            Text("Name")
 //        }, onValueChange = { name = it })
+//
 //        Spacer(modifier = Modifier.padding(8.dp))
 
         // 스텝 5: TextField를 OutlinedTextField로 변경해봅시다.
         OutlinedTextField(value = name, label = {
             Text("Name")
         }, onValueChange = { name = it })
+
         Spacer(modifier = Modifier.padding(8.dp))
 
         Text(text = "Hello $name")
